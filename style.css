@@ -134,7 +134,6 @@ body {
 .calendar__names ul {
   list-style: none;
   display: flex;
-  gap: 0.8rem;
 }
 
 .calendar__names li {
@@ -574,10 +573,23 @@ body {
   .app__calendar {
     min-height: 60%;
     padding: 0.8rem;
+    padding-top: 1.6rem;
   }
 
   .app__extension {
     flex-direction: column;
+  }
+
+  .calendar__month {
+    margin-bottom: 1.6rem;
+  }
+
+  .calendar__names {
+    font-size: 1.2rem;
+  }
+
+  .calendar__names li {
+    margin-bottom: 0.8rem;
   }
 
   .day__number {
