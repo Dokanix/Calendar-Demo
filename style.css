@@ -15,6 +15,7 @@
   --color-green: #49653e; /* #415f35; */
   --color-blue: #366378; /* #393f65; */
   --color-purple: #674e88; /* #4f3053; */
+  --color-yellow: #827f43;
   --shadow-strong: 0.5rem 2rem 5rem rgba(0, 0, 0, 0.4);
   --shadow-light: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
   --shadow-selected: inset 0 0 0 2px var(--color-primary);
@@ -244,8 +245,9 @@ body {
   color: var(--color-font-light);
   line-height: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding-left: 0.4rem;
   height: 25%;
   width: 50%;
   position: relative;
@@ -266,18 +268,22 @@ body {
 
 .events__item--exam {
   background-color: var(--color-red);
+  border-right: 0.1px solid var(--color-red);
 }
 
 .events__item--lab {
   background-color: var(--color-blue);
+  border-right: 0.1px solid var(--color-blue);
 }
 
 .events__item--project {
   background-color: var(--color-green);
+  border-right: 0.1px solid var(--color-green);
 }
 
 .events__item--other {
   background-color: var(--color-purple);
+  border-right: 0.1px solid var(--color-purple);
 }
 
 .events__item::after {
