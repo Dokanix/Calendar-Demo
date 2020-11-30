@@ -563,6 +563,10 @@ body {
 }
 
 @media only screen and (max-width: 35rem) {
+  :root {
+    --shadow-selected: inset 0 0 0 1px var(--color-primary);
+  }
+
   html {
     font-size: 40%;
   }
