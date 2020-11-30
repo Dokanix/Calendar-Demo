@@ -24,6 +24,7 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  touch-action: manipulation;
 }
 
 * {
@@ -181,6 +182,29 @@ body {
   transition: all 0.1s;
 }
 
+.calendar__day--weekend {
+  background-color: var(--color-light-2);
+}
+
+.calendar__day--inactive {
+  background-color: var(--color-medium);
+  opacity: 0.3;
+}
+
+.calendar__day--selected {
+  background-color: var(--color-dark);
+  box-shadow: var(--shadow-selected);
+  cursor: initial;
+}
+
+.calendar__day--selected .events__list {
+  margin: 2px;
+}
+
+.calendar__day--selected .events__item {
+  height: calc((100% - 4px) / 4);
+}
+
 .calendar__day:not(.calendar__day--selected):hover,
 .calendar__day:focus {
   outline: none;
@@ -210,6 +234,7 @@ body {
   height: 100%;
   text-transform: uppercase;
   font-size: 1.2rem;
+  transition: all 0.2s;
 }
 
 .events__item {
@@ -276,21 +301,6 @@ body {
   justify-content: flex-end;
   font-family: "Oswald", sans-serif;
   user-select: none;
-}
-
-.calendar__day--weekend {
-  background-color: var(--color-light-2);
-}
-
-.calendar__day--inactive {
-  background-color: var(--color-medium);
-  opacity: 0.3;
-}
-
-.calendar__day--selected {
-  background-color: var(--color-dark);
-  box-shadow: var(--shadow-selected);
-  cursor: initial;
 }
 
 /* EXTENSION */
@@ -447,12 +457,18 @@ body {
 
 .app__links {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   list-style: none;
   text-decoration: underline;
   font-size: 1.4rem;
   color: var(--color-primary);
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.app__links a:not(:last-child) {
+  margin-right: 3.2rem;
+  margin-bottom: 0.6rem;
 }
 
 .app__link {
@@ -461,8 +477,9 @@ body {
 
 .app__link:after {
   font-family: FontAwesome;
+  font-size: 1.2rem;
   content: "\f35d";
-  margin-left: 0.5rem;
+  margin-left: 0.4rem;
   display: inline-block;
 }
 
@@ -472,12 +489,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   line-height: 1.4;
-  padding: 0 1.2rem 0.8rem 0.4rem;
-  margin-left: -0.4rem;
-  border-radius: 0.4rem;
+  padding: 0 1.2rem 0 0.8rem;
   overflow-y: auto;
   overflow-x: hidden;
-  box-shadow: inset -0.4rem 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
+  border-left: 2px solid var(--color-primary);
 }
 
 ::-webkit-scrollbar {
