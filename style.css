@@ -244,7 +244,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 25%;
-  width: 45%;
+  width: 50%;
   position: relative;
   transition: all 0.2s;
 }
@@ -583,6 +583,8 @@ body {
   .day__number {
     font-size: 2rem;
     width: 10%;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
   }
 
   .app__events {
