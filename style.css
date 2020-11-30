@@ -316,6 +316,8 @@ body {
   margin-bottom: 1rem;
 }
 
+/* EXTENSION LIST */
+
 .events-list {
   list-style: none;
   color: var(--color-font-light);
@@ -422,6 +424,8 @@ body {
 .events-list__time {
   margin-right: 3.2rem;
 }
+
+/* EXTENSION INFO */
 
 .app__info {
   padding: 1.6rem;
@@ -544,21 +548,31 @@ body {
 }
 
 @media only screen and (max-width: 35rem) {
+  html {
+    font-size: 40%;
+  }
+
   .app__calendar {
     min-height: 70%;
-    padding: 0.2rem;
+    padding: 0.8rem;
   }
 
   .app__extension {
     flex-direction: column;
   }
 
-  html {
-    font-size: 40%;
-  }
-
   .day__number {
     font-size: 2rem;
     width: 10%;
+  }
+
+  .app__events {
+    padding: 0.8rem;
+    padding-top: 1.6rem;
+  }
+
+  .app__info {
+    padding: 0.8rem;
+    padding-top: 0.8rem;
   }
 }
