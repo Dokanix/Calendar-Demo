@@ -148,13 +148,19 @@ body {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 0.8rem;
+}
+
+.calendar__row:not(:last-child) {
+  margin-bottom: 0.8rem;
 }
 
 .calendar__row {
   display: flex;
   flex: 1;
-  gap: 0.8rem;
+}
+
+.calendar__day:not(:last-child) {
+  margin-right: 0.8rem;
 }
 
 .calendar__row:first-child .calendar__day--inactive {
@@ -538,6 +544,11 @@ body {
 }
 
 @media only screen and (max-width: 35rem) {
+  .app__calendar {
+    min-height: 70%;
+    padding: 0.2rem;
+  }
+
   .app__extension {
     flex-direction: column;
   }
