@@ -11,10 +11,10 @@
   --color-lightest: #606668;
   --color-font-light: #eee4dc;
   --color-font-gray: #bcb5b0;
-  --color-red: #733537;
-  --color-green: #415f35;
-  --color-blue: #393f65;
-  --color-purple: #4f3053;
+  --color-red: #864c51; /* #733537 ; */
+  --color-green: #49653e; /* #415f35; */
+  --color-blue: #366378; /* #393f65; */
+  --color-purple: #674e88; /* #4f3053; */
   --shadow-strong: 0.5rem 2rem 5rem rgba(0, 0, 0, 0.4);
   --shadow-light: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1);
   --shadow-selected: inset 0 0 0 2px var(--color-primary);
@@ -375,10 +375,10 @@ body {
 .events-list__item--exam:after {
   content: "";
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  width: 1.5rem;
-  bottom: 0.5rem;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 1.6rem;
+  bottom: 0.8rem;
   border-radius: 0.2rem;
   box-shadow: var(--shadow-light);
   background-color: var(--color-red);
@@ -387,10 +387,10 @@ body {
 .events-list__item--lab:after {
   content: "";
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  width: 1.5rem;
-  bottom: 0.5rem;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 1.6rem;
+  bottom: 0.8rem;
   border-radius: 0.2rem;
   box-shadow: var(--shadow-light);
   background-color: var(--color-blue);
@@ -399,10 +399,10 @@ body {
 .events-list__item--project:after {
   content: "";
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  width: 1.5rem;
-  bottom: 0.5rem;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 1.6rem;
+  bottom: 0.8rem;
   border-radius: 0.2rem;
   box-shadow: var(--shadow-light);
   background-color: var(--color-green);
@@ -411,10 +411,10 @@ body {
 .events-list__item--other:after {
   content: "";
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  width: 1.5rem;
-  bottom: 0.5rem;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 1.6rem;
+  bottom: 0.8rem;
   border-radius: 0.2 rem;
   box-shadow: var(--shadow-light);
   background-color: var(--color-purple);
