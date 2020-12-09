@@ -70,6 +70,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   color: var(--color-font);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 /* MAIN */
@@ -93,6 +94,7 @@ body {
   border-radius: 1.6rem;
   background-color: var(--color-medium);
   box-shadow: var(--shadow-strong);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .app--small {
@@ -129,6 +131,7 @@ body {
   cursor: pointer;
   border: none;
   box-shadow: var(--shadow-light);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .button--notifications {
@@ -167,6 +170,7 @@ body {
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 /* CALENDAR SETTINGS */
@@ -182,6 +186,7 @@ body {
   top: 4.8rem;
   margin: 0 auto;
   z-index: 5;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .calendar__setting {
@@ -199,6 +204,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 2rem;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .calendar__setting-list {
@@ -219,6 +225,7 @@ body {
   box-shadow: var(--shadow-light);
   user-select: none;
   cursor: pointer;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .calendar__setting-option--selected {
@@ -260,6 +267,7 @@ body {
   font-size: 3rem;
   font-weight: normal;
   color: var(--color-font);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .calendar__title--current {
@@ -271,6 +279,7 @@ body {
 .calendar__names {
   color: var(--color-font);
   font-size: 1.6rem;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .calendar__names-list {
@@ -316,6 +325,7 @@ body {
   flex: 1;
   height: 100%;
   box-shadow: var(--shadow-light);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .day:not(:last-child) {
@@ -324,15 +334,18 @@ body {
 
 .day--current {
   background-color: var(--color-lightest);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .day--weekend {
   background-color: var(--color-light-2);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .day--inactive {
   background-color: var(--color-medium);
   opacity: 0.3;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .day--selected {
@@ -441,6 +454,7 @@ body {
   position: relative;
   background-color: var(--color-darkest);
   overflow: none;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .extension__events {
@@ -454,6 +468,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 1rem;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 /* EXTENSION LIST */
@@ -461,6 +476,7 @@ body {
 .extension__events-list {
   list-style: none;
   color: var(--color-font);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .extension__event {
@@ -472,6 +488,7 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .extension__event--adder {
@@ -482,6 +499,7 @@ body {
   height: 5.6rem;
   justify-content: center;
   color: var(--color-font);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .extension__event:not(:last-child) {
@@ -555,6 +573,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 1rem;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .app__links {
@@ -596,15 +615,18 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   border-left: 2px solid var(--color-primary);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 ::-webkit-scrollbar {
   background-color: var(--color-light);
   z-index: 2;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--color-dark);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 /* EDITION */
@@ -622,6 +644,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   margin-bottom: 1rem;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .edition__label {
@@ -630,6 +653,7 @@ body {
   font-weight: normal;
   color: var(--color-font);
   margin-bottom: 0.4rem;
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .edition__setting {
@@ -672,6 +696,7 @@ textarea {
 .submit__button--delete {
   background-color: inherit;
   color: var(--color-font);
+  transition: background-color 0.4s, color 0.3s;
 }
 
 .submit__button--delete:hover {
