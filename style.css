@@ -132,6 +132,7 @@ body {
 }
 
 .button--notifications {
+  visibility: hidden;
   margin-left: 0.8rem;
 }
 
