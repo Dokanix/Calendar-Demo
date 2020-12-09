@@ -1,12 +1,11 @@
 document.querySelector(".calendar__days").addEventListener("click", (e) => {
-  for (let day of document.querySelectorAll(".calendar__day")) {
-    day.classList.remove("calendar__day--selected");
+  for (let day of document.querySelectorAll(".day")) {
+    day.classList.remove("day--selected");
   }
-  e.target
-    .closest(".calendar__day")
-    ?.classList.toggle("calendar__day--selected");
+  e.target.closest(".day")?.classList.toggle("day--selected");
 });
 
+/*
 document.querySelector(".events-list").addEventListener("click", (e) => {
   e.target.closest(".events-list__item").remove();
   if (document.querySelectorAll(".events-list__item").length == 0) {
@@ -44,3 +43,21 @@ document.querySelector(".events-list").addEventListener("click", (e) => {
   </li>`;
   }
 });
+*/
+
+document.querySelector(".button--settings").addEventListener("click", () => {
+  const settings = document.querySelector(".calendar__settings");
+  settings.style.display = settings.style.display === "none" ? "block" : "none";
+});
+
+document
+  .querySelector(".calendar__setting-option--dark")
+  .addEventListener("click", () => {
+    document.body.setAttribute("data-theme", "dark");
+  });
+
+document
+  .querySelector(".calendar__setting-option--light")
+  .addEventListener("click", () => {
+    document.body.setAttribute("data-theme", "light");
+  });

@@ -17,332 +17,324 @@
     <script src="script.js" defer></script>
     <title>Document</title>
   </head>
-  <body>
+  <body data-theme="light">
+    <!--<body data-theme="light" >-->
     <div class="container">
       <div class="app">
-        <div class="app__calendar">
-          <div class="calendar__month">
-            <button class="month__button">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <h2 class="month__title">Listopad</h2>
-            <button class="month__button">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+        <div class="calendar">
+          <div class="calendar__header">
+            <button class="button button--previous"></button>
+            <h2 class="calendar__title calendar__title--current">Listopad</h2>
+            <button class="button button--next"></button>
           </div>
-          <div class="calendar__tools">
-            <button class="calendar__settings">
-              <i class="fas fa-cog"></i>
+          <div class="calendar__options">
+            <button class="button button--settings"></button>
+            <button class="button button--notifications">
+              <div class="button__counter">1</div>
             </button>
-            <button class="calendar__notifications">
-              <i class="fas fa-bell"></i>
-              <div class="notification__count">
-                <i class="fas fa-infinity"></i>
-              </div>
-            </button>
-            <div class="settings">
-              <div class="group">
-                <h3 class="group__header">Grupa</h3>
-                <ul class="group__list">
-                  <li class="group__number group__number--selected">1</li>
-                  <li class="group__number">2</li>
-                  <li class="group__number">3</li>
-                  <li class="group__number">4</li>
-                  <li class="group__number">5</li>
-                  <li class="group__number">6</li>
+            <div class="calendar__settings">
+              <div class="calendar__setting">
+                <h3 class="calendar__setting-name">Grupa</h3>
+                <ul class="calendar__setting-list">
+                  <li
+                    class="calendar__setting-option calendar__setting-option--selected-solid"
+                  >
+                    1
+                  </li>
+                  <li class="calendar__setting-option">2</li>
+                  <li class="calendar__setting-option">3</li>
+                  <li class="calendar__setting-option">4</li>
+                  <li class="calendar__setting-option">5</li>
+                  <li class="calendar__setting-option">6</li>
                 </ul>
               </div>
-              <div class="theme">
-                <h3 class="theme__header">Motyw</h3>
-                <ul class="theme__list">
-                  <div class="theme__item theme__item--light"></div>
+              <div class="calendar__setting">
+                <h3 class="calendar__setting-name">Motyw</h3>
+                <ul class="calendar__setting-list">
                   <div
-                    class="theme__item theme__item--dark theme__item--selected"
+                    class="calendar__setting-option calendar__setting-option--dark"
+                  ></div>
+                  <div
+                    class="calendar__setting-option calendar__setting-option--light calendar__setting-option--selected"
                   ></div>
                 </ul>
               </div>
             </div>
           </div>
           <div class="calendar__names">
-            <ul>
-              <li>poniedziałek</li>
-              <li>wtorek</li>
-              <li>środa</li>
-              <li>czwartek</li>
-              <li>piątek</li>
-              <li>sobota</li>
-              <li>niedziela</li>
+            <ul class="calendar__names-list">
+              <li class="calendar__names-item">poniedziałek</li>
+              <li class="calendar__names-item">wtorek</li>
+              <li class="calendar__names-item">środa</li>
+              <li class="calendar__names-item">czwartek</li>
+              <li class="calendar__names-item">piątek</li>
+              <li class="calendar__names-item">sobota</li>
+              <li class="calendar__names-item">niedziela</li>
             </ul>
           </div>
           <div class="calendar__days">
             <div class="calendar__row">
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">26</div>
               </div>
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">27</div>
               </div>
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">28</div>
               </div>
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">29</div>
               </div>
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">30</div>
               </div>
-              <div
-                class="calendar__day calendar__day--inactive calendar__day--weekend"
-                tabindex="0"
-              >
-                <div class="events"></div>
+              <div class="day day--inactive day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">31</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">1</div>
               </div>
             </div>
             <div class="calendar__row">
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">2</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">3</div>
               </div>
-              <div class="calendar__day calendar__day--selected" tabindex="0">
-                <div class="events">
-                  <ul class="events__list">
-                    <li class="events__item events__item--exam">AKO</li>
-                    <li class="events__item events__item--lab">GRAF</li>
-                    <li class="events__item events__item--project">FIZ</li>
-                    <li class="events__item events__item--other">JPR</li>
+              <div class="day day--selected" tabindex="0">
+                <div class="day__events">
+                  <ul class="day__events-list">
+                    <li class="day__event day__event--exam">AKO</li>
+                    <li class="day__event day__event--lab">GRAF</li>
+                    <li class="day__event day__event--project">FIZ</li>
+                    <li class="day__event day__event--other">JPR</li>
                   </ul>
                 </div>
                 <div class="day__number">4</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events">
-                  <ul class="events__list">
-                    <li class="events__item events__item--exam">AKO</li>
-                    <li class="events__item events__item--lab">GRAF</li>
-                    <li class="events__item events__item--project">FIZ</li>
+              <div class="day" tabindex="0">
+                <div class="day__events">
+                  <ul class="day__events-list">
+                    <li class="day__event day__event--exam">AKO</li>
+                    <li class="day__event day__event--lab">GRAF</li>
+                    <li class="day__event day__event--project">FIZ</li>
                   </ul>
                 </div>
                 <div class="day__number">5</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
-                <div class="day__number">6</div>
+              <div class="day day--current" tabindex="0">
+                <div class="day__events"></div>
+                <div class="day__number day__number--current">6</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">7</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">8</div>
               </div>
             </div>
             <div class="calendar__row">
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">9</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">10</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">11</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events">
-                  <ul class="events__list">
-                    <li class="events__item events__item--exam">AKO</li>
-                    <li class="events__item events__item--lab">GRAF</li>
-                    <li class="events__item events__item--project">FIZ</li>
-                    <li class="events__item events__item--other">JPR</li>
+              <div class="day" tabindex="0">
+                <div class="day__events">
+                  <ul class="day__events-list">
+                    <li class="day__event day__event--exam">AKO</li>
+                    <li class="day__event day__event--lab">GRAF</li>
+                    <li class="day__event day__event--project">FIZ</li>
+                    <li class="day__event day__event--other">JPR</li>
                   </ul>
                 </div>
                 <div class="day__number">12</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events">
-                  <ul class="events__list">
-                    <li class="events__item events__item--exam">AKO</li>
-                    <li class="events__item events__item--lab">GRAF</li>
-                    <li class="events__item events__item--project">FIZ</li>
+              <div class="day" tabindex="0">
+                <div class="day__events">
+                  <ul class="day__events-list">
+                    <li class="day__event day__event--exam">AKO</li>
+                    <li class="day__event day__event--lab">GRAF</li>
+                    <li class="day__event day__event--project">FIZ</li>
                   </ul>
                 </div>
                 <div class="day__number">13</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events">
-                  <ul class="events__list">
-                    <li class="events__item events__item--exam">AKO</li>
-                    <li class="events__item events__item--lab">GRAF</li>
-                    <li class="events__item events__item--project">FIZ</li>
-                    <li class="events__item events__item--other">JPR</li>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events">
+                  <ul class="day__events-list">
+                    <li class="day__event day__event--exam">AKO</li>
+                    <li class="day__event day__event--lab">GRAF</li>
+                    <li class="day__event day__event--project">FIZ</li>
+                    <li class="day__event day__event--other">JPR</li>
                   </ul>
                 </div>
                 <div class="day__number">14</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events">
-                  <ul class="events__list">
-                    <li class="events__item events__item--exam">AKO</li>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events">
+                  <ul class="day__events-list">
+                    <li class="day__event day__event--exam">AKO</li>
                   </ul>
                 </div>
                 <div class="day__number">15</div>
               </div>
             </div>
             <div class="calendar__row">
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">16</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">17</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">18</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">19</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">20</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">21</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">22</div>
               </div>
             </div>
             <div class="calendar__row">
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">23</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">24</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">25</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">26</div>
               </div>
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">27</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">28</div>
               </div>
-              <div class="calendar__day calendar__day--weekend" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">29</div>
               </div>
             </div>
             <div class="calendar__row">
-              <div class="calendar__day" tabindex="0">
-                <div class="events"></div>
+              <div class="day" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">30</div>
               </div>
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">1</div>
               </div>
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">2</div>
               </div>
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">3</div>
               </div>
-              <div class="calendar__day calendar__day--inactive" tabindex="0">
-                <div class="events"></div>
+              <div class="day day--inactive" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">4</div>
               </div>
-              <div
-                class="calendar__day calendar__day--inactive calendar__day--weekend"
-                tabindex="0"
-              >
-                <div class="events"></div>
+              <div class="day day--inactive day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">5</div>
               </div>
-              <div
-                class="calendar__day calendar__day--inactive calendar__day--weekend"
-                tabindex="0"
-              >
-                <div class="events"></div>
+              <div class="day day--inactive day--weekend" tabindex="0">
+                <div class="day__events"></div>
                 <div class="day__number">6</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="app__extension">
-          <div class="app__events">
-            <h2 class="events__header">Wydarzenia</h2>
-            <ul class="events-list">
-              <li class="events-list__item events-list__item--project">
-                <h3>Wytwarzanie Aplikacji Internetowych</h3>
-                <div class="events-list__info">
-                  <div class="events-list__time">11:30 - 12:45</div>
-                  <div class="events-list__category">Projekt</div>
+        <!-- TUTAJ DUZO ROBOTY -->
+        <div class="extension">
+          <div class="extension__events">
+            <h2 class="extension__header">Wydarzenia</h2>
+            <ul class="extension__events-list">
+              <li class="extension__event extension__event--project">
+                <h3 class="extension__event-title">
+                  Wytwarzanie Aplikacji Internetowych
+                </h3>
+                <div class="extension__event-panel">
+                  <div class="extension__event-info">11:00</div>
+                  <div class="extension__event-info">Projekt</div>
                 </div>
               </li>
               <li
-                class="events-list__item events-list__item--selected events-list__item--exam"
+                class="extension__event extension__event--selected extension__event--exam"
               >
-                <h3>Języki Programowania</h3>
-                <div class="events-list__info">
-                  <div class="events-list__time">14:00 - 15:20</div>
-                  <div class="events-list__category">Kolokwium</div>
+                <h3 class="extension__event-title">Języki Programowania</h3>
+                <div class="extension__event-panel">
+                  <div class="extension__event-info">14:00</div>
+                  <div class="extension__event-info">Kolokwium</div>
                 </div>
               </li>
-              <li class="events-list__item events-list__item--lab">
-                <h3>Fizyka Współczesna</h3>
-                <div class="events-list__info">
-                  <div class="events-list__time">16:15 - 17:00</div>
-                  <div class="events-list__category">Laboratorium</div>
+              <li class="extension__event extension__event--lab">
+                <h3 class="extension__event-title">Fizyka Współczesna</h3>
+                <div class="extension__event-panel">
+                  <div class="extension__event-info">16:15</div>
+                  <div class="extension__event-info">Laboratorium</div>
                 </div>
               </li>
-              <li class="events-list__item events-list__item--other">
-                <h3>Grafika Komputerowa</h3>
-                <div class="events-list__info">
-                  <div class="events-list__time">17:15 - 18:00</div>
-                  <div class="events-list__category">Inne</div>
+              <li class="extension__event extension__event--other">
+                <h3 class="extension__event-title">Grafika Komputerowa</h3>
+                <div class="extension__event-panel">
+                  <div class="extension__event-info">17:15</div>
+                  <div class="extension__event-info">Inne</div>
                 </div>
               </li>
             </ul>
           </div>
 
           <div class="app__info">
-            <h3>Języki Programowania</h3>
+            <h3 class="app__event-title">Języki Programowania</h3>
             <ul class="app__links">
               <a><li class="app__link">eNauczanie</li></a>
               <a><li class="app__link">Prezentacja</li></a>
