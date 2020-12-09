@@ -5,6 +5,9 @@ document.querySelector(".calendar__days").addEventListener("click", (e) => {
   e.target.closest(".day")?.classList.toggle("day--selected");
 });
 
+const settings = document.querySelector(".calendar__settings");
+settings.style.display = "none";
+
 /*
 document.querySelector(".events-list").addEventListener("click", (e) => {
   e.target.closest(".events-list__item").remove();
@@ -46,7 +49,6 @@ document.querySelector(".events-list").addEventListener("click", (e) => {
 */
 
 document.querySelector(".button--settings").addEventListener("click", () => {
-  const settings = document.querySelector(".calendar__settings");
   settings.style.display = settings.style.display === "none" ? "block" : "none";
 });
 
