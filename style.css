@@ -129,7 +129,6 @@ body {
   cursor: pointer;
   border: none;
   box-shadow: var(--shadow-light);
-  transition: all 0.1s;
 }
 
 .button--notifications {
@@ -316,7 +315,6 @@ body {
   flex: 1;
   height: 100%;
   box-shadow: var(--shadow-light);
-  transition: all 0.1s;
 }
 
 .day:not(:last-child) {
@@ -359,7 +357,6 @@ body {
   height: 100%;
   text-transform: uppercase;
   font-size: 1.2rem;
-  transition: all 0.2s;
 }
 
 .day__event {
@@ -372,7 +369,6 @@ body {
   height: 25%;
   width: 50%;
   position: relative;
-  transition: all 0.2s;
   box-shadow: var(--shadow-light);
 }
 
@@ -475,7 +471,6 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.2s;
 }
 
 .extension__event--adder {
