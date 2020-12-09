@@ -48,8 +48,16 @@ document.querySelector(".events-list").addEventListener("click", (e) => {
 });
 */
 
-document.querySelector(".button--settings").addEventListener("click", () => {
+document.addEventListener("click", (e) => {
+  if (!settings.contains(e.target) && settings.style.display == "block") {
+    settings.style.display = "none";
+  }
+});
+
+document.querySelector(".button--settings").addEventListener("click", (e) => {
+  console.log("Clicked");
   settings.style.display = settings.style.display === "none" ? "block" : "none";
+  e.stopPropagation();
 });
 
 document
