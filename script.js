@@ -53,11 +53,23 @@ document.querySelector(".button--settings").addEventListener("click", () => {
 document
   .querySelector(".calendar__setting-option--dark")
   .addEventListener("click", () => {
+    document
+      .querySelector(".calendar__setting-option--light")
+      .classList.remove("calendar__setting-option--selected");
+    document
+      .querySelector(".calendar__setting-option--dark")
+      .classList.add("calendar__setting-option--selected");
     document.body.setAttribute("data-theme", "dark");
   });
 
 document
   .querySelector(".calendar__setting-option--light")
   .addEventListener("click", () => {
+    document
+      .querySelector(".calendar__setting-option--dark")
+      .classList.remove("calendar__setting-option--selected");
+    document
+      .querySelector(".calendar__setting-option--light")
+      .classList.add("calendar__setting-option--selected");
     document.body.setAttribute("data-theme", "light");
   });
