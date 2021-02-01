@@ -31,7 +31,7 @@
   --color-dark: #bebebe;
   --color-medium: #dbdbdb;
   --color-light: #e5e5e5;
-  --color-light-2: #b7b7b7;
+  --color-light-2: #cecece;
   --color-lightest: #ffffff;
   --color-font: #3f3f3f;
   --color-font-light: #eee4dc;
@@ -277,7 +277,8 @@ body {
 }
 
 .calendar__title--current {
-  border-bottom: 0.4rem solid var(--color-primary);
+  color: var(--color-primary);
+  filter: brightness(1.2);
 }
 
 /* CALENDAR NAMES */
@@ -334,13 +335,28 @@ body {
   transition: background-color 0.4s, color 0.3s;
 }
 
+.day:focus {
+  outline: none;
+}
+
 .day:not(:last-child) {
   margin-right: 0.8rem;
 }
 
 .day--current {
-  background-color: var(--color-lightest);
+  background-color: var(--color-primary);
+  color: var(--color-font-light);
   transition: background-color 0.4s, color 0.3s;
+}
+
+.day--current.day--selected {
+  box-shadow: inset 0 0 0 0.4rem var(--color-primary),
+    inset 0 0 0 0.6rem var(--color-medium);
+}
+
+.day--selected {
+  box-shadow: inset 0 0 0 0.4rem var(--color-primary);
+  cursor: initial;
 }
 
 .day--weekend {
@@ -352,12 +368,6 @@ body {
   background-color: var(--color-medium);
   opacity: 0.3;
   transition: background-color 0.4s, color 0.3s;
-}
-
-.day--selected {
-  background-color: var(--color-primary);
-  color: var(--color-font-light);
-  cursor: initial;
 }
 
 .day--selected .day__event {
@@ -440,8 +450,8 @@ body {
 
 .day__number {
   font-size: 3rem;
-  margin-right: 0.8rem;
-  margin-bottom: 0.8rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
   text-align: right;
   line-height: 1;
   display: flex;
@@ -455,6 +465,7 @@ body {
 /* EXTENSION */
 
 .extension {
+  width: 44rem;
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -721,6 +732,15 @@ textarea {
     max-width: none;
   }
 
+  .app--small {
+    height: 88rem;
+    margin: 2rem;
+    max-width: 168rem;
+    max-height: 60rem;
+    width: auto;
+    border-radius: 1.6rem;
+  }
+
   .calendar {
     padding: 4rem;
     padding-top: 2.4rem;
@@ -744,19 +764,33 @@ textarea {
   html {
     font-size: 56.25%;
   }
+
+  .app--small {
+    max-height: 62rem;
+  }
 }
 
 @media only screen and (max-width: 82rem) {
   html {
     font-size: 50%;
   }
+
+  .app--small {
+    max-height: 65rem;
+  }
 }
 
-@media only screen and (max-width: 50rem) {
+@media only screen and (max-width: 60rem) {
   .app {
     flex-direction: column;
     max-height: none;
     overflow: visible;
+  }
+
+  .app--small {
+    flex-direction: row;
+    max-height: 65rem;
+    overflow: hidden;
   }
 
   .calendar {
@@ -780,6 +814,25 @@ textarea {
   }
 }
 
+@media only screen and (max-width: 45rem) {
+  .app--small {
+    height: auto;
+    max-height: none;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+    flex-direction: column;
+  }
+
+  .extension {
+    flex-direction: column;
+  }
+
+  .extension__events {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 35rem) {
   :root {
     --shadow-selected: inset 0 0 0 1px var(--color-primary);
@@ -800,8 +853,21 @@ textarea {
     right: 0.8rem;
   }
 
-  .extension {
-    flex-direction: column;
+  .day {
+    border-radius: 0;
+  }
+
+  .day:not(:last-child) {
+    margin-right: 0;
+    border-right: 1px solid var(--color-darkest);
+  }
+
+  .calendar__row:not(:last-child) {
+    border-bottom: 1px solid var(--color-darkest);
+  }
+
+  .calendar__row:not(:last-child) {
+    margin-bottom: 0rem;
   }
 
   .calendar__header {
@@ -819,8 +885,6 @@ textarea {
   .day__number {
     font-size: 2rem;
     width: 10%;
-    margin-right: 0.4rem;
-    margin-bottom: 0.4rem;
   }
 
   .extension__events {
