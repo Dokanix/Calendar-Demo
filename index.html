@@ -7,7 +7,7 @@
       src="https://kit.fontawesome.com/14d4c297e2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="/Ikonki/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Ikonki/favicon2.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400;700&display=swap"
@@ -17,6 +17,16 @@
     <script src="script.js" defer></script>
     <title>Document</title>
   </head>
+
+  <!--
+     .extension__events-list  -> .events-list
+     .extension__event        -> .event
+     .day__events             -> .day__flags
+     .day__event              -> .day__flag
+
+     Removed .event--selected
+
+  -->
   <body data-theme="dark">
     <!--<body data-theme="light" >-->
     <div class="container">
@@ -75,126 +85,126 @@
           <div class="calendar__days">
             <div class="calendar__row">
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">26</div>
               </div>
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">27</div>
               </div>
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">28</div>
               </div>
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">29</div>
               </div>
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">30</div>
               </div>
               <div class="day day--inactive day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">31</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">1</div>
               </div>
             </div>
             <div class="calendar__row">
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">2</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">3</div>
               </div>
               <div class="day day--selected" tabindex="0">
-                <div class="day__events">
-                  <ul class="day__events-list">
-                    <li class="day__event day__event--exam">AKO</li>
-                    <li class="day__event day__event--lab">GRAF</li>
-                    <li class="day__event day__event--project">FIZ</li>
-                    <li class="day__event day__event--other">JPR</li>
+                <div class="day__flags">
+                  <ul class="day__flags-list">
+                    <li class="day__flag day__flag--exam">AKO</li>
+                    <li class="day__flag day__flag--lab">GRAF</li>
+                    <li class="day__flag day__flag--project">FIZ</li>
+                    <li class="day__flag day__flag--other">JPR</li>
                   </ul>
                 </div>
                 <div class="day__number">4</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events">
-                  <ul class="day__events-list">
-                    <li class="day__event day__event--exam">AKO</li>
-                    <li class="day__event day__event--lab">GRAF</li>
-                    <li class="day__event day__event--project">FIZ</li>
+                <div class="day__flags">
+                  <ul class="day__flags-list">
+                    <li class="day__flag day__flag--exam">AKO</li>
+                    <li class="day__flag day__flag--lab">GRAF</li>
+                    <li class="day__flag day__flag--project">FIZ</li>
                   </ul>
                 </div>
                 <div class="day__number">5</div>
               </div>
               <div class="day day--current" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number day__number--current">6</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">7</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">8</div>
               </div>
             </div>
             <div class="calendar__row">
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">9</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">10</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">11</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events">
-                  <ul class="day__events-list">
-                    <li class="day__event day__event--exam">AKO</li>
-                    <li class="day__event day__event--lab">GRAF</li>
-                    <li class="day__event day__event--project">FIZ</li>
-                    <li class="day__event day__event--other">JPR</li>
+                <div class="day__flags">
+                  <ul class="day__flags-list">
+                    <li class="day__flag day__flag--exam">AKO</li>
+                    <li class="day__flag day__flag--lab">GRAF</li>
+                    <li class="day__flag day__flag--project">FIZ</li>
+                    <li class="day__flag day__flag--other">JPR</li>
                   </ul>
                 </div>
                 <div class="day__number">12</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events">
-                  <ul class="day__events-list">
-                    <li class="day__event day__event--exam">AKO</li>
-                    <li class="day__event day__event--lab">GRAF</li>
-                    <li class="day__event day__event--project">FIZ</li>
+                <div class="day__flags">
+                  <ul class="day__flags-list">
+                    <li class="day__flag day__flag--exam">AKO</li>
+                    <li class="day__flag day__flag--lab">GRAF</li>
+                    <li class="day__flag day__flag--project">FIZ</li>
                   </ul>
                 </div>
                 <div class="day__number">13</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events">
-                  <ul class="day__events-list">
-                    <li class="day__event day__event--exam">AKO</li>
-                    <li class="day__event day__event--lab">GRAF</li>
-                    <li class="day__event day__event--project">FIZ</li>
-                    <li class="day__event day__event--other">JPR</li>
+                <div class="day__flags">
+                  <ul class="day__flags-list">
+                    <li class="day__flag day__flag--exam">AKO</li>
+                    <li class="day__flag day__flag--lab">GRAF</li>
+                    <li class="day__flag day__flag--project">FIZ</li>
+                    <li class="day__flag day__flag--other">JPR</li>
                   </ul>
                 </div>
                 <div class="day__number">14</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events">
-                  <ul class="day__events-list">
-                    <li class="day__event day__event--exam">AKO</li>
+                <div class="day__flags">
+                  <ul class="day__flags-list">
+                    <li class="day__flag day__flag--exam">AKO</li>
                   </ul>
                 </div>
                 <div class="day__number">15</div>
@@ -202,91 +212,91 @@
             </div>
             <div class="calendar__row">
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">16</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">17</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">18</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">19</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">20</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">21</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">22</div>
               </div>
             </div>
             <div class="calendar__row">
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">23</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">24</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">25</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">26</div>
               </div>
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">27</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">28</div>
               </div>
               <div class="day day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">29</div>
               </div>
             </div>
             <div class="calendar__row">
               <div class="day" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">30</div>
               </div>
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">1</div>
               </div>
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">2</div>
               </div>
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">3</div>
               </div>
               <div class="day day--inactive" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">4</div>
               </div>
               <div class="day day--inactive day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">5</div>
               </div>
               <div class="day day--inactive day--weekend" tabindex="0">
-                <div class="day__events"></div>
+                <div class="day__flags"></div>
                 <div class="day__number">6</div>
               </div>
             </div>
@@ -296,44 +306,150 @@
         <div class="extension">
           <div class="extension__events">
             <h2 class="extension__header">Wydarzenia</h2>
-            <ul class="extension__events-list">
-              <li class="extension__event--adder">
+            <ul class="events-list">
+              <li class="event--adder">
                 <button class="extension__button">Dodaj Wydarzenie</button>
               </li>
-              <li
-                class="extension__event extension__event--selected extension__event--exam"
-              >
-                <h3 class="extension__event-title">Języki Programowania</h3>
-                <div class="extension__event-panel">
-                  <div class="extension__event-info">14:00</div>
-                  <div class="extension__event-info">Kolokwium</div>
+
+              <li class="event">
+                <div class="event__topbar event__topbar--red">
+                  <h3 class="event__title">Języki Programowania</h3>
+                  <button class="event__editor"></button>
+                  <button class="event__deleter"></button>
+                </div>
+                <div class="event__panel">
+                  <div class="event__tags">
+                    <div class="event__tag event__tag--type">Egzamin</div>
+                    <div class="event__tag event__tag--time">14:00</div>
+                    <div class="event__tag event__tag--info">Poprawa</div>
+                  </div>
+                  <div class="event__description">
+                    Egzamin potwierdzony, wszystkie informacje znajdują się na
+                    eNauczaniu. Godzina potwierdzona. Termin poprawkowy, wyniki
+                    za 3 dni.
+                  </div>
                 </div>
               </li>
-              <li class="extension__event extension__event--lab">
-                <h3 class="extension__event-title">Fizyka Współczesna</h3>
-                <div class="extension__event-panel">
-                  <div class="extension__event-info">16:15</div>
-                  <div class="extension__event-info">Laboratorium</div>
+
+              <li class="event">
+                <div class="event__topbar event__topbar--red">
+                  <h3 class="event__title">Architektura Komputerów</h3>
+                  <button class="event__editor"></button>
+                  <button class="event__deleter"></button>
+                </div>
+                <div class="event__panel">
+                  <div class="event__tags">
+                    <div class="event__tag event__tag--type">Egzamin</div>
+                    <div class="event__tag event__tag--time">15:00</div>
+                  </div>
+                  <div class="event__description">
+                    Egzamin potwierdzony, wszystkie informacje znajdują się na
+                    eNauczaniu. Godzina potwierdzona. Termin poprawkowy, wyniki
+                    za 3 dni.
+                  </div>
                 </div>
               </li>
-              <li class="extension__event extension__event--other">
-                <h3 class="extension__event-title">Grafika Komputerowa</h3>
-                <div class="extension__event-panel">
-                  <div class="extension__event-info">17:15</div>
-                  <div class="extension__event-info">Inne</div>
+
+              <li class="event">
+                <div class="event__topbar event__topbar--blue">
+                  <h3 class="event__title">Przetwarzanie Rozproszone</h3>
+                  <button class="event__editor"></button>
+                  <button class="event__deleter"></button>
+                </div>
+                <div class="event__panel">
+                  <div class="event__tags">
+                    <div class="event__tag event__tag--type">Lab.</div>
+                    <div class="event__tag event__tag--time">16:00</div>
+                    <div class="event__tag event__tag--info">Zerówka</div>
+                  </div>
+                  <div class="event__description">
+                    Egzamin potwierdzony, wszystkie informacje znajdują się na
+                    eNauczaniu. Godzina potwierdzona. Termin poprawkowy, wyniki
+                    za 3 dni.
+                  </div>
+                </div>
+              </li>
+
+              <li class="event">
+                <div class="event__topbar event__topbar--purple">
+                  <h3 class="event__title">Języki Programowania</h3>
+                  <button class="event__editor"></button>
+                  <button class="event__deleter"></button>
+                </div>
+                <div class="event__panel">
+                  <div class="event__tags">
+                    <div class="event__tag event__tag--type">Egzamin</div>
+                    <div class="event__tag event__tag--time">14:00</div>
+                    <div class="event__tag event__tag--info">Poprawa</div>
+                  </div>
+                  <div class="event__description">
+                    Egzamin potwierdzony, wszystkie informacje znajdują się na
+                    eNauczaniu. Godzina potwierdzona. Termin poprawkowy, wyniki
+                    za 3 dni.
+                  </div>
+                </div>
+              </li>
+
+              <li class="event">
+                <div class="event__topbar event__topbar--green">
+                  <h3 class="event__title">Języki Programowania</h3>
+                  <button class="event__editor"></button>
+                  <button class="event__deleter"></button>
+                </div>
+                <div class="event__panel">
+                  <div class="event__tags">
+                    <div class="event__tag event__tag--type">Egzamin</div>
+                    <div class="event__tag event__tag--time">14:00</div>
+                    <div class="event__tag event__tag--info">Poprawa</div>
+                  </div>
+                  <div class="event__description">
+                    Egzamin potwierdzony, wszystkie informacje znajdują się na
+                    eNauczaniu. Godzina potwierdzona. Termin poprawkowy, wyniki
+                    za 3 dni.
+                  </div>
+                </div>
+              </li>
+
+              <li class="event">
+                <div class="event__topbar event__topbar--yellow">
+                  <h3 class="event__title">Języki Programowania</h3>
+                  <button class="event__editor"></button>
+                  <button class="event__deleter"></button>
+                </div>
+                <div class="event__panel">
+                  <div class="event__tags">
+                    <div class="event__tag event__tag--type">Egzamin</div>
+                    <div class="event__tag event__tag--time">14:00</div>
+                    <div class="event__tag event__tag--info">Poprawa</div>
+                  </div>
+                  <div class="event__description">
+                    Egzamin potwierdzony, wszystkie informacje znajdują się na
+                    eNauczaniu. Godzina potwierdzona. Termin poprawkowy, wyniki
+                    za 3 dni.
+                  </div>
+                </div>
+              </li>
+
+              <li class="event">
+                <div class="event__topbar event__topbar--yellow">
+                  <h3 class="event__title">Języki Programowania</h3>
+                  <button class="event__editor"></button>
+                  <button class="event__deleter"></button>
+                </div>
+                <div class="event__panel">
+                  <div class="event__tags">
+                    <div class="event__tag event__tag--type">Egzamin</div>
+                    <div class="event__tag event__tag--time">14:00</div>
+                    <div class="event__tag event__tag--info">Poprawa</div>
+                  </div>
+                  <div class="event__description">
+                    Egzamin potwierdzony, wszystkie informacje znajdują się na
+                    eNauczaniu. Godzina potwierdzona. Termin poprawkowy, wyniki
+                    za 3 dni.
+                  </div>
                 </div>
               </li>
             </ul>
-          </div>
-
-          <div class="app__info">
-            <h3 class="app__event-title">Języki Programowania</h3>
-            <div class="app__info-text">
-              Wszystkie najważniejsze informacje zostały wrzucone na Dysk
-              Google. Na eNauczaniu znajdują się warunki zaliczenia. Wymagane
-              jest 51 punktów z całego przedmiotu, z czego te kolokwium jest
-              warte 20, następne 20 oraz 4 projekty oceniane na 15 punktów.
-            </div>
           </div>
         </div>
       </div>
