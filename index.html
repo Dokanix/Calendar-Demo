@@ -7,7 +7,7 @@
       src="https://kit.fontawesome.com/14d4c297e2.js"
       crossorigin="anonymous"
     ></script>
-
+    <link rel="shortcut icon" href="/Ikonki/favicon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@300;400;700&display=swap"
@@ -17,7 +17,7 @@
     <script src="script.js" defer></script>
     <title>Document</title>
   </head>
-  <body data-theme="light">
+  <body data-theme="dark">
     <!--<body data-theme="light" >-->
     <div class="container">
       <div class="app">
@@ -63,13 +63,13 @@
           </div>
           <div class="calendar__names">
             <ul class="calendar__names-list">
-              <li class="calendar__names-item">poniedziałek</li>
-              <li class="calendar__names-item">wtorek</li>
-              <li class="calendar__names-item">środa</li>
-              <li class="calendar__names-item">czwartek</li>
-              <li class="calendar__names-item">piątek</li>
-              <li class="calendar__names-item">sobota</li>
-              <li class="calendar__names-item">niedziela</li>
+              <li class="calendar__names-item">pon.</li>
+              <li class="calendar__names-item">wt.</li>
+              <li class="calendar__names-item">śr.</li>
+              <li class="calendar__names-item">czw.</li>
+              <li class="calendar__names-item">pt.</li>
+              <li class="calendar__names-item">sb.</li>
+              <li class="calendar__names-item">ndz.</li>
             </ul>
           </div>
           <div class="calendar__days">
@@ -293,19 +293,12 @@
           </div>
         </div>
 
-        <!-- TUTAJ DUZO ROBOTY -->
         <div class="extension">
           <div class="extension__events">
             <h2 class="extension__header">Wydarzenia</h2>
             <ul class="extension__events-list">
-              <li class="extension__event extension__event--project">
-                <h3 class="extension__event-title">
-                  Wytwarzanie Aplikacji Internetowych
-                </h3>
-                <div class="extension__event-panel">
-                  <div class="extension__event-info">11:00</div>
-                  <div class="extension__event-info">Projekt</div>
-                </div>
+              <li class="extension__event--adder">
+                <button class="extension__button">Dodaj Wydarzenie</button>
               </li>
               <li
                 class="extension__event extension__event--selected extension__event--exam"
@@ -335,11 +328,6 @@
 
           <div class="app__info">
             <h3 class="app__event-title">Języki Programowania</h3>
-            <ul class="app__links">
-              <a><li class="app__link">eNauczanie</li></a>
-              <a><li class="app__link">Prezentacja</li></a>
-              <a><li class="app__link">Dysk Google</li></a>
-            </ul>
             <div class="app__info-text">
               Wszystkie najważniejsze informacje zostały wrzucone na Dysk
               Google. Na eNauczaniu znajdują się warunki zaliczenia. Wymagane
@@ -347,6 +335,35 @@
               warte 20, następne 20 oraz 4 projekty oceniane na 15 punktów.
             </div>
           </div>
+        </div>
+      </div>
+
+      <div style="display: none" class="modal">
+        <div class="event-adder">
+          <h2 class="event-adder__title">Dodawanie Wydarzenia</h2>
+          <form class="event-adder__form" action="">
+            <label class="event-adder__label" for="subject">Przedmiot</label>
+            <select class="event-adder__input" name="" id="subject">
+              <option value="">Jebac pis</option>
+              <option value="">***** ***</option>
+            </select>
+            <label class="event-adder__label" for="subject">Przedmiot</label>
+            <select class="event-adder__input" name="" id="subject">
+              <option value="">Jebac pis</option>
+              <option value="">***** ***</option>
+            </select>
+            <label class="event-adder__label" for="subject">Przedmiot</label>
+            <select class="event-adder__input" name="" id="subject">
+              <option value="">Jebac pis</option>
+              <option value="">***** ***</option>
+            </select>
+            <div class="event-adder__buttons">
+              <button class="event-adder__button--accept">
+                Utwórz Wydarzenie
+              </button>
+              <button class="event-adder__button--reject">Anuluj</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
